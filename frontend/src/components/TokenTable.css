@@ -1,0 +1,83 @@
+/**
+ * Componente: Tabla de Tokens y Lexemas - Estilos
+ */
+
+.token-table-container {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.token-table-container h2 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.token-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.token-table thead {
+  background-color: #3498db;
+  color: white;
+}
+
+.token-table th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.token-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.token-table tbody tr:hover {
+  background-color: #ecf0f1;
+}
+
+.token-table .token-type {
+  background-color: #e8f4f8;
+  color: #0c5b7a;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.4rem 0.75rem;
+  display: inline-block;
+}
+
+.token-table .lexeme {
+  font-family: 'Courier New', monospace;
+  background-color: #f0f0f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  color: #d63031;
+}
+
+.token-table .part-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.token-table .part-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.no-data {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 2rem;
+  font-style: italic;
+}
