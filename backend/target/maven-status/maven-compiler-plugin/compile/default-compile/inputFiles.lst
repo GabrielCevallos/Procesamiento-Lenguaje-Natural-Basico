@@ -1,9 +1,12 @@
-/home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/parser/ParseException.java
+/home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/parser/AmbiguityDetector.java
+/home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/lexer/LexicalLoader.java
 /home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/ast/ASTNode.java
 /home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/ast/DerivationStep.java
 /home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/lexer/Lexer.java
+/home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/lexer/VerbConjugator.java
 /home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/lexer/Token.java
 /home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/Application.java
+/home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/lexer/AdjectiveGenerator.java
 /home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/controller/ParseController.java
 /home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/lexer/TokenType.java
 /home/gabriel/Desktop/Proyectos/Automatas/Procesamiento-Lenguaje-Natural-Basico/backend/src/main/java/com/pln/parser/Parser.java

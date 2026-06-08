@@ -3,203 +3,296 @@ package com.pln.parser;
 import com.pln.lexer.Token;
 import com.pln.lexer.TokenType;
 import com.pln.ast.*;
-
 import java.util.*;
 
-/**
- * Parser: Analizador sintáctico.
- * Valida que la entrada cumpla con la gramática:
- *
- * S        → Oración
- * Oración  → Sujeto Verbo Complemento
- * Sujeto   → Determinante? Palabra+
- * Verbo    → Palabra+
- * Complemento → Palabra+ | Determinante Palabra+ | Preposición Determinante? Palabra+
- *
- * Realiza derivaciones por la izquierda y construye el AST.
- */
 public class Parser {
-    private List<Token> tokens;
+    private final List<Token> tokens;
     private int current;
-    private List<DerivationStep> derivationSteps;
+    private final List<DerivationStep> derivationSteps;
     private int stepCounter;
     private ASTNode root;
+    private String parseError;
+    private final List<String> ruleStack;
 
     public Parser(List<Token> tokens) {
         this.tokens = tokens;
         this.current = 0;
         this.derivationSteps = new ArrayList<>();
         this.stepCounter = 0;
+        this.parseError = null;
+        this.ruleStack = new ArrayList<>();
     }
 
-    /**
-     * Realiza el análisis sintáctico de los tokens.
-     * 
-     * @return Raíz del AST si es válido
-     * @throws ParseException si la estructura no es válida
-     */
-    public ASTNode parse() throws ParseException {
-        addDerivationStep("S");
+    public ASTNode parse() {
+        ruleStack.add("ORACION");
+        addStep("ORACION", "Simbolo inicial");
         root = parseOracion();
-        
-        if (!isAtEnd()) {
-            throw new ParseException("La oración tiene estructura inválida");
+        if (!isAtEnd() && !hasError()) {
+            parseError = "Error: elementos inesperados despues del complemento: '" + peek().getLexeme() + "'";
         }
-        
         return root;
     }
 
-    /**
-     * Analiza una oración: Sujeto Verbo Complemento
-     */
-    private ASTNode parseOracion() throws ParseException {
-        addDerivationStep("Oración");
-        
-        ASTNode node = new ASTNode("Oración", false, stepCounter);
-        
+    public boolean hasError() { return parseError != null; }
+    public String getParseError() { return parseError; }
+    public List<DerivationStep> getDerivationSteps() { return derivationSteps; }
+    public List<String> getSententialForms() { return ruleStack; }
+    private ASTNode parseOracion() {
+        ASTNode node = new ASTNode("ORACION", false);
+
+        replaceLast("ORACION", "SUJETO VERBO COMPLEMENTO");
+        addStep("SUJETO VERBO COMPLEMENTO", "ORACION -> SUJETO VERBO COMPLEMENTO");
+
         ASTNode sujeto = parseSujeto();
+        if (sujeto.getChildren().isEmpty()) {
+            parseError = "Error: No se encontro un sujeto valido. Se esperaba un sintagma nominal (articulo + sustantivo) o un pronombre.";
+            node.addChild(sujeto);
+            return node;
+        }
         node.addChild(sujeto);
-        addDerivationStep("Sujeto Verbo Complemento");
-        
+
         ASTNode verbo = parseVerbo();
+        if (verbo.getChildren().isEmpty()) {
+            parseError = "Error: No se encontro un verbo. Toda oracion debe contener al menos un verbo conjugado.";
+            node.addChild(verbo);
+            return node;
+        }
         node.addChild(verbo);
-        addDerivationStep("Verbo Complemento");
-        
+
         ASTNode complemento = parseComplemento();
-        node.addChild(complemento);
-        addDerivationStep("Complemento");
-        
+        if (!complemento.getChildren().isEmpty()) {
+            node.addChild(complemento);
+        }
+
         return node;
     }
 
-    /**
-     * Analiza el sujeto: Determinante? Palabra+
-     * Consume tokens hasta encontrar un VERBO o PREPOSICION.
-     */
-    private ASTNode parseSujeto() throws ParseException {
-        ASTNode node = new ASTNode("Sujeto", false, stepCounter);
-        
-        while (current < tokens.size() && tokens.get(current).getType() != TokenType.EOF) {
-            TokenType type = tokens.get(current).getType();
-            
-            // El verbo pertenece a la siguiente parte
-            if (type == TokenType.VERBO) {
+    private ASTNode parseSujeto() {
+        ASTNode node = new ASTNode("SUJETO", false);
+
+        int saved = current;
+        ASTNode sn = parseSN();
+        if (sn != null && !sn.getChildren().isEmpty()) {
+            node.addChild(sn);
+            replaceLast("SUJETO", "SN");
+            addStep(buildCurrentForm(), "SUJETO -> SN");
+            return node;
+        }
+        current = saved;
+
+        if (match(TokenType.PRONOMBRE)) {
+            ASTNode pronVal = new ASTNode(previous().getLexeme(), true);
+            ASTNode pronNode = new ASTNode("PRONOMBRE", false);
+            pronNode.addChild(pronVal);
+            node.addChild(pronNode);
+            replaceLast("SUJETO", previous().getLexeme());
+            addStep(buildCurrentForm(), "SUJETO -> PRONOMBRE");
+            return node;
+        }
+
+        return node;
+    }
+
+    private ASTNode parseSN() {
+        int saved = current;
+        ASTNode node = new ASTNode("SN", false);
+
+        if (match(TokenType.ARTICULO)) {
+            ASTNode artVal = new ASTNode(previous().getLexeme(), true);
+            ASTNode artNode = new ASTNode("ARTICULO", false);
+            artNode.addChild(artVal);
+            node.addChild(artNode);
+        }
+
+        boolean hasCore = false;
+
+        if (match(TokenType.SUSTANTIVO)) {
+            ASTNode sustVal = new ASTNode(previous().getLexeme(), true);
+            ASTNode sustNode = new ASTNode("SUSTANTIVO", false);
+            sustNode.addChild(sustVal);
+            node.addChild(sustNode);
+            hasCore = true;
+            if (match(TokenType.SUSTANTIVO)) {
+                ASTNode sustVal2 = new ASTNode(previous().getLexeme(), true);
+                ASTNode sustNode2 = new ASTNode("SUSTANTIVO", false);
+                sustNode2.addChild(sustVal2);
+                node.addChild(sustNode2);
+            }
+        } else if (node.getChildren().isEmpty() && match(TokenType.PRONOMBRE)) {
+            ASTNode pronVal = new ASTNode(previous().getLexeme(), true);
+            ASTNode pronNode = new ASTNode("PRONOMBRE", false);
+            pronNode.addChild(pronVal);
+            node.addChild(pronNode);
+            hasCore = true;
+        }
+
+        if (!hasCore && node.getChildren().isEmpty()) {
+            current = saved;
+            return null;
+        } else if (!hasCore) {
+            current = saved;
+            return null;
+        }
+
+        if (match(TokenType.ADJETIVO)) {
+            ASTNode adjVal = new ASTNode(previous().getLexeme(), true);
+            ASTNode adjNode = new ASTNode("ADJETIVO", false);
+            adjNode.addChild(adjVal);
+            node.addChild(adjNode);
+        }
+
+        replaceLast("SN", buildSNForm(node));
+        addStep(buildCurrentForm(), "SN -> ARTICULO? SUSTANTIVO ADJETIVO?");
+
+        return node;
+    }
+
+    private ASTNode parseVerbo() {
+        ASTNode node = new ASTNode("VERBO", false);
+        if (match(TokenType.VERBO)) {
+            ASTNode verbVal = new ASTNode(previous().getLexeme(), true);
+            node.addChild(verbVal);
+            replaceLast("VERBO", previous().getLexeme());
+            addStep(buildCurrentForm(), "VERBO -> " + previous().getLexeme());
+            while (match(TokenType.VERBO)) {
+                ASTNode v = new ASTNode(previous().getLexeme(), true);
+                node.addChild(v);
+                addStep(buildCurrentForm(), "VERBO -> " + previous().getLexeme());
+            }
+        }
+        return node;
+    }
+
+    private ASTNode parseComplemento() {
+        ASTNode node = new ASTNode("COMPLEMENTO", false);
+        if (isAtEnd()) return node;
+
+        boolean hasComplement = false;
+
+        while (!isAtEnd()) {
+            int saved = current;
+            if (match(TokenType.PREPOSICION)) {
+                ASTNode prepVal = new ASTNode(previous().getLexeme(), true);
+                ASTNode prepNode = new ASTNode("PREPOSICION", false);
+                prepNode.addChild(prepVal);
+
+                ASTNode sn = parseSN();
+                if (sn != null && !sn.getChildren().isEmpty()) {
+                    node.addChild(prepNode);
+                    node.addChild(sn);
+                    hasComplement = true;
+                    continue;
+                }
+                current = saved;
                 break;
             }
-            // Una preposición inicia el complemento
-            if (type == TokenType.PREPOSICION) {
-                break;
+
+            if (!hasComplement) {
+                ASTNode sn = parseSN();
+                if (sn != null && !sn.getChildren().isEmpty()) {
+                    node.addChild(sn);
+                    hasComplement = true;
+                    continue;
+                }
             }
-            
-            Token word = tokens.get(current);
-            ASTNode wordNode = new ASTNode(word.getLexeme(), true, stepCounter);
-            node.addChild(wordNode);
-            current++;
-            
-            // Dejar al menos 2 tokens para verbo + complemento
-            if (remainingTokens() < 2) {
-                break;
+
+            if (!hasComplement && match(TokenType.ADVERBIO)) {
+                ASTNode advVal = new ASTNode(previous().getLexeme(), true);
+                ASTNode advNode = new ASTNode("ADVERBIO", false);
+                advNode.addChild(advVal);
+                node.addChild(advNode);
+                hasComplement = true;
+                continue;
             }
+
+            if (!hasComplement && match(TokenType.ADJETIVO)) {
+                ASTNode adjVal = new ASTNode(previous().getLexeme(), true);
+                ASTNode adjNode = new ASTNode("ADJETIVO", false);
+                adjNode.addChild(adjVal);
+                node.addChild(adjNode);
+                hasComplement = true;
+                continue;
+            }
+
+            break;
         }
-        
-        if (node.getChildren().isEmpty()) {
-            throw new ParseException("Falta el sujeto de la oración");
+
+        if (hasComplement) {
+            replaceLast("COMPLEMENTO", buildCompForm(node));
+            addStep(buildCurrentForm(), "COMPLEMENTO -> COMPLEMENTO");
         }
-        
+
         return node;
     }
 
-    /**
-     * Analiza el verbo: Palabra+ (mínimo una palabra)
-     * Consume tokens VERBO, o una PALABRA como fallback.
-     */
-    private ASTNode parseVerbo() throws ParseException {
-        ASTNode node = new ASTNode("Verbo", false, stepCounter);
-        
-        if (current >= tokens.size() || tokens.get(current).getType() == TokenType.EOF) {
-            throw new ParseException("Falta un verbo en la oración");
-        }
-        
-        // Consumir uno o más tokens VERBO consecutivos
-        if (tokens.get(current).getType() == TokenType.VERBO) {
-            while (current < tokens.size() && tokens.get(current).getType() == TokenType.VERBO) {
-                Token word = tokens.get(current);
-                ASTNode wordNode = new ASTNode(word.getLexeme(), true, stepCounter);
-                node.addChild(wordNode);
-                current++;
+    private String buildSNForm(ASTNode sn) {
+        StringBuilder sb = new StringBuilder();
+        for (ASTNode child : sn.getChildren()) {
+            for (ASTNode leaf : child.getChildren()) {
+                sb.append(leaf.getSymbol()).append(" ");
             }
-        } else {
-            // Fallback: tomar al menos una PALABRA como verbo desconocido
-            Token word = tokens.get(current);
-            ASTNode wordNode = new ASTNode(word.getLexeme(), true, stepCounter);
-            node.addChild(wordNode);
-            current++;
         }
-        
-        return node;
+        return sb.toString().trim();
     }
 
-    /**
-     * Analiza el complemento: Palabra+ | Determinante Palabra+ | Preposición Determinante? Palabra+
-     * Consume todos los tokens restantes.
-     */
-    private ASTNode parseComplemento() throws ParseException {
-        ASTNode node = new ASTNode("Complemento", false, stepCounter);
-        
-        if (current >= tokens.size() || tokens.get(current).getType() == TokenType.EOF) {
-            throw new ParseException("Falta el complemento de la oración");
+    private String buildCompForm(ASTNode comp) {
+        StringBuilder sb = new StringBuilder();
+        for (ASTNode child : comp.getChildren()) {
+            if (child.isTerminal()) {
+                sb.append(child.getSymbol()).append(" ");
+            } else {
+                for (ASTNode leaf : child.getChildren()) {
+                    sb.append(leaf.getSymbol()).append(" ");
+                }
+            }
         }
-        
-        while (current < tokens.size() && tokens.get(current).getType() != TokenType.EOF) {
-            Token word = tokens.get(current);
-            ASTNode wordNode = new ASTNode(word.getLexeme(), true, stepCounter);
-            node.addChild(wordNode);
-            current++;
-        }
-        
-        return node;
+        return sb.toString().trim();
     }
 
-    /**
-     * Cuenta cuántos tokens quedan sin procesar (sin incluir EOF).
-     */
-    private int remainingTokens() {
-        int count = 0;
-        int temp = current;
-        while (temp < tokens.size() && tokens.get(temp).getType() != TokenType.EOF) {
-            count++;
-            temp++;
+    private String buildCurrentForm() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < ruleStack.size(); i++) {
+            sb.append(ruleStack.get(i));
+            if (i < ruleStack.size() - 1) sb.append(" ");
         }
-        return count;
+        String form = sb.toString().trim();
+        return form.isEmpty() ? "ORACION" : form;
     }
 
-    /**
-     * Verifica si estamos al final de los tokens.
-     */
+    private void replaceLast(String from, String to) {
+        for (int i = ruleStack.size() - 1; i >= 0; i--) {
+            if (ruleStack.get(i).equals(from)) {
+                ruleStack.set(i, to);
+                return;
+            }
+        }
+    }
+
+    private boolean match(TokenType type) {
+        if (check(type)) { advance(); return true; }
+        return false;
+    }
+
+    private boolean check(TokenType type) {
+        if (isAtEnd()) return false;
+        return peek().getType() == type;
+    }
+
+    private Token advance() {
+        if (!isAtEnd()) current++;
+        return previous();
+    }
+
     private boolean isAtEnd() {
-        return current >= tokens.size() || 
-               (current == tokens.size() - 1 && tokens.get(current).getType() == TokenType.EOF);
+        if (current >= tokens.size()) return true;
+        return tokens.get(current).getType() == TokenType.EOF;
     }
 
-    /**
-     * Añade un paso de derivación por la izquierda.
-     */
-    private void addDerivationStep(String rule) {
+    private Token peek() { return tokens.get(current); }
+    private Token previous() { return tokens.get(current - 1); }
+
+    private void addStep(String form, String rule) {
         stepCounter++;
-        derivationSteps.add(new DerivationStep(stepCounter, rule, ""));
-    }
-
-    /**
-     * Obtiene los pasos de derivación realizados.
-     */
-    public List<DerivationStep> getDerivationSteps() {
-        return derivationSteps;
-    }
-
-    /**
-     * Obtiene el AST generado.
-     */
-    public ASTNode getAST() {
-        return root;
+        derivationSteps.add(new DerivationStep(stepCounter, form, rule));
     }
 }

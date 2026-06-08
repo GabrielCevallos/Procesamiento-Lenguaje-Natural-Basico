@@ -1,350 +1,91 @@
-# 📝 Procesamiento de Lenguaje Natural - Validador de Oraciones
+# Procesamiento de Lenguaje Natural - Analizador Sintactico
 
-Validador de estructura gramatical para oraciones en español. Implementa un analizador sintáctico que valida la estructura: **Sujeto + Verbo + Complemento**.
+Analizador sintactico para oraciones simples en espanol basado en Gramaticas Libres de Contexto (GLC/CFG) para Chatbots.
 
-**Materia:** Teoría de Autómatas y Computabilidad Avanzada  
-**Unidad:** 2 - Procesamiento de Lenguaje Natural Básico  
-**Grupo:** 2, 5, 8
+**Materia:** Teoria de Automatas y Computabilidad Avanzada  
+**Unidad:** 2 - Procesamiento de Lenguaje Natural Basico
 
----
+## Gramatica Libre de Contexto
 
-## 🏗️ Arquitectura
+ORACION -> SUJETO VERBO COMPLEMENTO
+SUJETO -> SN | PRONOMBRE
+SN -> ARTICULO? SUSTANTIVO ADJETIVO?
+COMPLEMENTO -> (PREPOSICION SN)+ | SN | ADVERBIO
 
-Se utiliza el patrón **MVC + Componentes Especializados**:
+## Arquitectura
 
-- **Backend:** Java con Spring Boot
-  - Lexer: Análisis léxico (tokenización)
-  - Parser: Análisis sintáctico (validación gramatical)
-  - AST: Árbol sintáctico abstracto con derivaciones
-  
-- **Frontend:** React con TypeScript
-  - Interfaz visual para ingresar oraciones
-  - Tabla de tokens y lexemas
-  - Visualización del árbol de derivación
-  - Pasos de derivación (izquierda)
+**Backend:** Java + Spring Boot (puerto 8080)
+- Lexer: Tokenizacion y clasificacion en 8 categorias (ARTICULO, PRONOMBRE, SUSTANTIVO, VERBO, ADJETIVO, ADVERBIO, PREPOSICION, CONJUNCION)
+- Parser: Descenso recursivo predictivo con CFG formal
+- AST: Arbol de derivacion con formas sentenciales
+- AmbiguityDetector: Deteccion de ambiguedad de adjuncion de SP (PP attachment)
 
-**Por qué esta arquitectura:**
-- Separación de responsabilidades clara
-- Escalabilidad sin afectar componentes existentes
-- Testabilidad: Cada módulo es independiente
-- Mantenibilidad siguiendo principios SOLID
+**Frontend:** React 18 + TypeScript + Vite (puerto 3000)
+- Interfaz tipo chatbot
+- Tabla de tokens por categoria gramatical
+- Arbol de derivacion (ASCII y grafico)
+- Identificacion de Sujeto, Verbo y Complemento
+- Deteccion de ambiguedad sintactica
 
----
+## Categorias Lexicas
 
-## 📐 Gramática
+| Categoria | Ejemplos |
+|-----------|----------|
+| ARTICULO | el, la, un, una, los, las |
+| PRONOMBRE | yo, tu, el, ella, nosotros, ellos |
+| SUSTANTIVO | perro, casa, libro, parque, museo |
+| VERBO | corre, canta, lee, tiene, explica |
+| ADJETIVO | negro, blanca, grande, pequeno |
+| ADVERBIO | bien, mal, muy, siempre, aqui |
+| PREPOSICION | en, con, por, a, de, para, al, del |
+| CONJUNCION | y, e, ni, o, pero, aunque, porque |
 
-### Definición Formal
+## Verbos Soportados
 
-La gramática es **libre de contexto (CFG)** y está en forma **SLR(1)**:
+150+ verbos regulares e irregulares con conjugacion completa (presente, preterito, imperfecto, futuro, condicional, subjuntivo, imperativo, gerundio, participio).
 
-```
-S        → Oración
+## Endpoint API
 
-Oración  → Sujeto Verbo Complemento
+POST /api/parse/analyze
+Body: { "sentence": "El perro corre en el parque" }
 
-Sujeto   → Determinante? Palabra+
+Respuesta: success, tokens, subject, verb, complement, derivationSteps, sententialForms, treeASCII, treeJSON, hasAmbiguity, ambiguities, error
 
-Verbo    → Palabra+
+## Oraciones de Prueba
 
-Complemento → Palabra+ 
-            | Determinante Palabra+ 
-            | Preposición Determinante? Palabra+
+**10 validas:**
+1. El perro corre en el parque
+2. La nina lee un libro
+3. Nosotros visitamos el museo
+4. El gato negro duerme en el sofa
+5. Ella canta bien
+6. Los ninos juegan en el jardin
+7. Un hombre compra pan
+8. El profesor explica la leccion
+9. Mi amigo tiene un perro
+10. La casa blanca esta en la colina
 
-Determinante → Palabra
-Preposición  → Palabra
+**5 invalidas:**
+1. Corre parque (falta sujeto)
+2. Azul rapidamente casa (falta verbo)
+3. el (sujeto incompleto)
+4. perro (falta verbo)
+5. en el (sujeto incompleto)
 
-Palabra   → [cualquier secuencia alphanumerica]
-```
+## Instalacion y Ejecucion
 
-### Características
-
-- ✅ **Genérica:** Acepta cualquier oración sin palabras hardcodeadas
-- ✅ **Sin ambigüedades:** Cada derivación es única
-- ✅ **SLR(1):** Puede analizarse con tabla LR simple
-- ✅ **Flexible:** El profesor puede probar con cualquier oración
-
----
-
-## 🔤 Léxico
-
-El análisis léxico produce dos tipos de tokens:
-
-| Tipo | Descripción | Ejemplo |
-|------|-------------|---------|
-| **PALABRA** | Cualquier secuencia de caracteres no espacios | "el", "perro", "corre" |
-| **EOF** | Fin de entrada | (automático) |
-
-### Tabla de Tokens Generada
-
-En el frontend se muestra una tabla interactiva con:
-- **#:** Número de token
-- **Tipo de Token:** Clasificación (PALABRA, etc.)
-- **Lexema:** Valor exacto del token
-- **Posición:** Índice en la entrada
-- **Línea:** Número de línea
-
----
-
-## 🌳 Derivación por la Izquierda
-
-El parser realiza derivaciones **por la izquierda** (leftmost derivation).
-
-### Ejemplo de Ejecución
-
-**Entrada:** "el perro corre en el parque"
-
-**Pasos de derivación:**
-```
-S
-Oración
-Sujeto Verbo Complemento
-el perro Verbo Complemento
-el perro corre Complemento
-el perro corre en el parque
-```
-
-### Salida Visual
-
-Se proporciona en dos formatos:
-
-#### 1. **Formato ASCII** (Árbol de derivación)
-```
-└── Oración
-    ├── Sujeto
-    │   ├── el
-    │   └── perro
-    ├── Verbo
-    │   └── corre
-    └── Complemento
-        ├── en
-        ├── el
-        └── parque
-```
-
-#### 2. **Formato Gráfico** (Visualización con colores)
-- Nodos no terminales: **Azul** (`#3498db`)
-- Nodos terminales (palabras): **Verde** (`#27ae60`)
-- Conexiones visuales entre nodos
-
----
-
-## 📊 Precedencia de Operadores
-
-Como el análisis es **SOLO GRAMATICAL** (sin semántica), no se aplican operadores lógicos. La estructura es simplemente:
-
-1. **Sujeto** (mínimo 1 palabra)
-2. **Verbo** (mínimo 1 palabra)
-3. **Complemento** (mínimo 1 palabra)
-
----
-
-## 🚀 Instalación y Ejecución
-
-### Requisitos Previos
-
-- **Java 21+**
-- **Maven 3.8+**
-- **Node.js 18+**
-- **npm 9+**
-
-### Backend (Spring Boot)
-
-```bash
-# Navegar al directorio del backend
+**Backend:**
 cd backend
-
-# Compilar el proyecto
-mvn clean compile
-
-# Ejecutar la aplicación
 mvn spring-boot:run
-```
 
-El backend estará disponible en: `http://localhost:8080`
-
-### Frontend (React)
-
-```bash
-# En otra terminal, navegar al frontend
+**Frontend:**
 cd frontend
-
-# Instalar dependencias
 npm install
-
-# Ejecutar en modo desarrollo
 npm run dev
-```
 
-El frontend estará disponible en: `http://localhost:3000`
+## Tecnologias
 
-### Acceso a la Aplicación
-
-1. Abre navegador en `http://localhost:3000`
-2. Ingresa una oración en el campo de texto
-3. Haz clic en **"Analizar"**
-4. Visualiza:
-   - ✅ Tabla de tokens y lexemas
-   - ✅ Pasos de derivación
-   - ✅ Árbol en ASCII
-   - ✅ Árbol gráfico
-
----
-
-## 📁 Estructura del Proyecto
-
-```
-Procesamiento-Lenguaje-Natural-Basico/
-│
-├── backend/
-│   ├── src/main/java/com/pln/
-│   │   ├── lexer/
-│   │   │   ├── TokenType.java       # Enumeración de tipos
-│   │   │   ├── Token.java           # Representación de token
-│   │   │   └── Lexer.java           # Análisis léxico
-│   │   ├── parser/
-│   │   │   ├── Parser.java          # Análisis sintáctico
-│   │   │   └── ParseException.java  # Excepción de parsing
-│   │   ├── ast/
-│   │   │   ├── ASTNode.java         # Nodo del árbol
-│   │   │   └── DerivationStep.java  # Paso de derivación
-│   │   ├── controller/
-│   │   │   └── ParseController.java # REST API
-│   │   └── Application.java         # Main Spring Boot
-│   ├── src/main/resources/
-│   │   └── application.yml          # Configuración
-│   └── pom.xml                      # Dependencias Maven
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── TokenTable.tsx       # Tabla de tokens
-│   │   │   ├── TokenTable.css
-│   │   │   ├── DerivationSteps.tsx  # Pasos y árbol ASCII
-│   │   │   ├── DerivationSteps.css
-│   │   │   ├── TreeVisualization.tsx # Árbol gráfico
-│   │   │   └── TreeVisualization.css
-│   │   ├── services/
-│   │   │   └── api.ts               # Cliente HTTP
-│   │   ├── types/
-│   │   │   └── index.ts             # Tipos TypeScript
-│   │   ├── App.tsx                  # Componente principal
-│   │   ├── App.css                  # Estilos globales
-│   │   └── main.tsx                 # Entry point
-│   ├── index.html                   # HTML base
-│   ├── package.json                 # Dependencias npm
-│   ├── tsconfig.json                # Configuración TypeScript
-│   └── vite.config.ts               # Configuración Vite
-│
-├── README.md                        # Este archivo
-└── .gitignore                       # Git ignorar
-```
-
----
-
-## 🔍 Validación
-
-El sistema valida la estructura gramatical de la oración. Ejemplos:
-
-### ✅ Válidas
-
-- "el perro corre"
-- "mi hermano juega en el parque"
-- "los gatos duermen"
-- "una persona come manzanas"
-
-### ❌ Inválidas
-
-- "perro el corre" (orden incorrecto)
-- "el corre" (falta complemento)
-- "el perro" (falta verbo)
-
----
-
-## 📝 Detalles Técnicos
-
-### Lexer
-
-- Divide la entrada en tokens por espacios en blanco
-- Genera automaticamente un token EOF
-- Rastrea posición y línea de cada token
-
-### Parser
-
-- Implementa descenso recursivo predictivo
-- Realiza derivaciones por la izquierda
-- Levanta excepciones con información de error
-
-### AST
-
-- Representa la estructura sintáctica completa
-- Nodos terminales: palabras
-- Nodos no terminales: símbolos gramaticales (S, Oración, Sujeto, etc.)
-- Convertible a formato ASCII y JSON
-
-### API REST
-
-- **Endpoint:** `POST /api/parse/analyze`
-- **Request:** `{ "sentence": "string" }`
-- **Response:** 
-  ```json
-  {
-    "success": boolean,
-    "tokens": Array,
-    "derivationSteps": Array,
-    "treeASCII": string,
-    "treeJSON": Object
-  }
-  ```
-
----
-
-## 📚 Tecnologías Utilizadas
-
-### Backend
-- **Java 17**: Lenguaje de programación
-- **Spring Boot 3.2**: Framework web
-- **Maven**: Gestor de dependencias y build
-
-### Frontend
-- **React 18**: Biblioteca de UI
-- **TypeScript**: Tipado estático
-- **Vite**: Build tool rápido
-- **Axios**: Cliente HTTP
-
----
-
-## 👨‍💻 Implementación de Programación Limpia
-
-- **Nombres significativos:** Variables y métodos con nombres claros
-- **Funciones pequeñas:** Cada función hace una cosa bien
-- **Comentarios:** Explicación de conceptos complejos
-- **Manejo de errores:** Excepciones clara y descriptivas
-- **Sin hardcoding:** Lógica flexible y genérica
-
----
-
-## 🎯 Consideraciones Importantes
-
-- ⚠️ **SOLO GRAMÁTICA:** El sistema valida estructura sintáctica, NO semántica
-- ⚠️ **SIN PALABRAS RESERVADAS:** Cualquier palabra es válida
-- ⚠️ **DERIVACIONES POR IZQUIERDA:** Orden específico de análisis
-- ⚠️ **SIN OPERADORES:** (|, &, ~) no se incluyen porque no son necesarios para la estructura básica
-
----
-
-## 📞 Soporte
-
-Para dudas o problemas:
-1. Verifica que ambos servidores están ejecutándose (puerto 8080 para backend, 3000 para frontend)
-2. Revisa los logs en consola
-3. Asegúrate de que los puertos no estén en uso
-
----
-
-## 📄 Licencia
-
-Proyecto académico - Teoría de Autómatas y Computabilidad Avanzada
-
----
-
-**Última actualización:** Junio 2024
+- Java 17+, Spring Boot 3.2+, Maven
+- React 18, TypeScript, Vite, Axios
+- Vocabulario en archivos JSON (no base de datos)
+- Sin dependencias de NLP externas, OpenAI, GPT, LLMs, ML/DL

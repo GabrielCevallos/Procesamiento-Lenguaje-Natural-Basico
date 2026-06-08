@@ -1,0 +1,1366 @@
+[
+  {
+    "adjective": "rojo",
+    "type": "o"
+  },
+  {
+    "adjective": "alto",
+    "type": "o"
+  },
+  {
+    "adjective": "bajo",
+    "type": "o"
+  },
+  {
+    "adjective": "largo",
+    "type": "o"
+  },
+  {
+    "adjective": "corto",
+    "type": "o"
+  },
+  {
+    "adjective": "ancho",
+    "type": "o"
+  },
+  {
+    "adjective": "estrecho",
+    "type": "o"
+  },
+  {
+    "adjective": "nuevo",
+    "type": "o"
+  },
+  {
+    "adjective": "viejo",
+    "type": "o"
+  },
+  {
+    "adjective": "moderno",
+    "type": "o"
+  },
+  {
+    "adjective": "antiguo",
+    "type": "o"
+  },
+  {
+    "adjective": "rapido",
+    "type": "o"
+  },
+  {
+    "adjective": "lento",
+    "type": "o"
+  },
+  {
+    "adjective": "caro",
+    "type": "o"
+  },
+  {
+    "adjective": "barato",
+    "type": "o"
+  },
+  {
+    "adjective": "verdadero",
+    "type": "o"
+  },
+  {
+    "adjective": "falso",
+    "type": "o"
+  },
+  {
+    "adjective": "claro",
+    "type": "o"
+  },
+  {
+    "adjective": "oscuro",
+    "type": "o"
+  },
+  {
+    "adjective": "rico",
+    "type": "o"
+  },
+  {
+    "adjective": "pobre",
+    "type": "o"
+  },
+  {
+    "adjective": "contento",
+    "type": "o"
+  },
+  {
+    "adjective": "enojado",
+    "type": "o"
+  },
+  {
+    "adjective": "cansado",
+    "type": "o"
+  },
+  {
+    "adjective": "enfermo",
+    "type": "o"
+  },
+  {
+    "adjective": "sano",
+    "type": "o"
+  },
+  {
+    "adjective": "limpio",
+    "type": "o"
+  },
+  {
+    "adjective": "sucio",
+    "type": "o"
+  },
+  {
+    "adjective": "caliente",
+    "type": "o"
+  },
+  {
+    "adjective": "frio",
+    "type": "o"
+  },
+  {
+    "adjective": "salado",
+    "type": "o"
+  },
+  {
+    "adjective": "amargo",
+    "type": "o"
+  },
+  {
+    "adjective": "acido",
+    "type": "o"
+  },
+  {
+    "adjective": "suave",
+    "type": "o"
+  },
+  {
+    "adjective": "duro",
+    "type": "o"
+  },
+  {
+    "adjective": "pesado",
+    "type": "o"
+  },
+  {
+    "adjective": "ligero",
+    "type": "o"
+  },
+  {
+    "adjective": "abierto",
+    "type": "o"
+  },
+  {
+    "adjective": "cerrado",
+    "type": "o"
+  },
+  {
+    "adjective": "seguro",
+    "type": "o"
+  },
+  {
+    "adjective": "peligroso",
+    "type": "o"
+  },
+  {
+    "adjective": "aburrido",
+    "type": "o"
+  },
+  {
+    "adjective": "divertido",
+    "type": "o"
+  },
+  {
+    "adjective": "serio",
+    "type": "o"
+  },
+  {
+    "adjective": "gracioso",
+    "type": "o"
+  },
+  {
+    "adjective": "tonto",
+    "type": "o"
+  },
+  {
+    "adjective": "listo",
+    "type": "o"
+  },
+  {
+    "adjective": "sabio",
+    "type": "o"
+  },
+  {
+    "adjective": "honesto",
+    "type": "o"
+  },
+  {
+    "adjective": "educado",
+    "type": "o"
+  },
+  {
+    "adjective": "generoso",
+    "type": "o"
+  },
+  {
+    "adjective": "egoista",
+    "type": "o"
+  },
+  {
+    "adjective": "pacifico",
+    "type": "o"
+  },
+  {
+    "adjective": "violento",
+    "type": "o"
+  },
+  {
+    "adjective": "tranquilo",
+    "type": "o"
+  },
+  {
+    "adjective": "nervioso",
+    "type": "o"
+  },
+  {
+    "adjective": "solo",
+    "type": "o"
+  },
+  {
+    "adjective": "casado",
+    "type": "o"
+  },
+  {
+    "adjective": "soltero",
+    "type": "o"
+  },
+  {
+    "adjective": "divorciado",
+    "type": "o"
+  },
+  {
+    "adjective": "viudo",
+    "type": "o"
+  },
+  {
+    "adjective": "proximo",
+    "type": "o"
+  },
+  {
+    "adjective": "anterior",
+    "type": "o"
+  },
+  {
+    "adjective": "siguiente",
+    "type": "o"
+  },
+  {
+    "adjective": "ultimo",
+    "type": "o"
+  },
+  {
+    "adjective": "primero",
+    "type": "o"
+  },
+  {
+    "adjective": "segundo",
+    "type": "o"
+  },
+  {
+    "adjective": "tercero",
+    "type": "o"
+  },
+  {
+    "adjective": "cuarto",
+    "type": "o"
+  },
+  {
+    "adjective": "quinto",
+    "type": "o"
+  },
+  {
+    "adjective": "completo",
+    "type": "o"
+  },
+  {
+    "adjective": "vacio",
+    "type": "o"
+  },
+  {
+    "adjective": "lleno",
+    "type": "o"
+  },
+  {
+    "adjective": "medio",
+    "type": "o"
+  },
+  {
+    "adjective": "entero",
+    "type": "o"
+  },
+  {
+    "adjective": "parcial",
+    "type": "o"
+  },
+  {
+    "adjective": "total",
+    "type": "o"
+  },
+  {
+    "adjective": "publico",
+    "type": "o"
+  },
+  {
+    "adjective": "privado",
+    "type": "o"
+  },
+  {
+    "adjective": "nacional",
+    "type": "o"
+  },
+  {
+    "adjective": "internacional",
+    "type": "o"
+  },
+  {
+    "adjective": "local",
+    "type": "o"
+  },
+  {
+    "adjective": "regional",
+    "type": "o"
+  },
+  {
+    "adjective": "general",
+    "type": "o"
+  },
+  {
+    "adjective": "particular",
+    "type": "o"
+  },
+  {
+    "adjective": "especial",
+    "type": "o"
+  },
+  {
+    "adjective": "comun",
+    "type": "o"
+  },
+  {
+    "adjective": "raro",
+    "type": "o"
+  },
+  {
+    "adjective": "extrano",
+    "type": "o"
+  },
+  {
+    "adjective": "normal",
+    "type": "o"
+  },
+  {
+    "adjective": "unico",
+    "type": "o"
+  },
+  {
+    "adjective": "perfecto",
+    "type": "o"
+  },
+  {
+    "adjective": "imperfecto",
+    "type": "o"
+  },
+  {
+    "adjective": "exacto",
+    "type": "o"
+  },
+  {
+    "adjective": "aproximado",
+    "type": "o"
+  },
+  {
+    "adjective": "continuo",
+    "type": "o"
+  },
+  {
+    "adjective": "eterno",
+    "type": "o"
+  },
+  {
+    "adjective": "temporal",
+    "type": "o"
+  },
+  {
+    "adjective": "permanente",
+    "type": "o"
+  },
+  {
+    "adjective": "momentaneo",
+    "type": "o"
+  },
+  {
+    "adjective": "urgente",
+    "type": "o"
+  },
+  {
+    "adjective": "blanco",
+    "type": "o"
+  },
+  {
+    "adjective": "negro",
+    "type": "o"
+  },
+  {
+    "adjective": "gris",
+    "type": "o"
+  },
+  {
+    "adjective": "bonito",
+    "type": "o"
+  },
+  {
+    "adjective": "feo",
+    "type": "o"
+  },
+  {
+    "adjective": "guapo",
+    "type": "o"
+  },
+  {
+    "adjective": "rubio",
+    "type": "o"
+  },
+  {
+    "adjective": "moreno",
+    "type": "o"
+  },
+  {
+    "adjective": "delgado",
+    "type": "o"
+  },
+  {
+    "adjective": "gordo",
+    "type": "o"
+  },
+  {
+    "adjective": "fuerte",
+    "type": "o"
+  },
+  {
+    "adjective": "debiles",
+    "type": "o"
+  },
+  {
+    "adjective": "sabroso",
+    "type": "o"
+  },
+  {
+    "adjective": "hermoso",
+    "type": "o"
+  },
+  {
+    "adjective": "precioso",
+    "type": "o"
+  },
+  {
+    "adjective": "maravilloso",
+    "type": "o"
+  },
+  {
+    "adjective": "horrible",
+    "type": "o"
+  },
+  {
+    "adjective": "terrible",
+    "type": "o"
+  },
+  {
+    "adjective": "noble",
+    "type": "o"
+  },
+  {
+    "adjective": "humilde",
+    "type": "o"
+  },
+  {
+    "adjective": "orgulloso",
+    "type": "o"
+  },
+  {
+    "adjective": "triste",
+    "type": "o"
+  },
+  {
+    "adjective": "alegre",
+    "type": "o"
+  },
+  {
+    "adjective": "calmo",
+    "type": "o"
+  },
+  {
+    "adjective": "fresco",
+    "type": "o"
+  },
+  {
+    "adjective": "seco",
+    "type": "o"
+  },
+  {
+    "adjective": "humedo",
+    "type": "o"
+  },
+  {
+    "adjective": "plano",
+    "type": "o"
+  },
+  {
+    "adjective": "profundo",
+    "type": "o"
+  },
+  {
+    "adjective": "redondo",
+    "type": "o"
+  },
+  {
+    "adjective": "cuadrado",
+    "type": "o"
+  },
+  {
+    "adjective": "simple",
+    "type": "o"
+  },
+  {
+    "adjective": "doble",
+    "type": "o"
+  },
+  {
+    "adjective": "multiple",
+    "type": "o"
+  },
+  {
+    "adjective": "culto",
+    "type": "o"
+  },
+  {
+    "adjective": "justo",
+    "type": "o"
+  },
+  {
+    "adjective": "injusto",
+    "type": "o"
+  },
+  {
+    "adjective": "libre",
+    "type": "o"
+  },
+  {
+    "adjective": "ocupado",
+    "type": "o"
+  },
+  {
+    "adjective": "llano",
+    "type": "o"
+  },
+  {
+    "adjective": "angosto",
+    "type": "o"
+  },
+  {
+    "adjective": "agudo",
+    "type": "o"
+  },
+  {
+    "adjective": "grave",
+    "type": "o"
+  },
+  {
+    "adjective": "brusco",
+    "type": "o"
+  },
+  {
+    "adjective": "mecanico",
+    "type": "o"
+  },
+  {
+    "adjective": "electrico",
+    "type": "o"
+  },
+  {
+    "adjective": "magnetico",
+    "type": "o"
+  },
+  {
+    "adjective": "optico",
+    "type": "o"
+  },
+  {
+    "adjective": "acustico",
+    "type": "o"
+  },
+  {
+    "adjective": "digital",
+    "type": "o"
+  },
+  {
+    "adjective": "analogico",
+    "type": "o"
+  },
+  {
+    "adjective": "social",
+    "type": "o"
+  },
+  {
+    "adjective": "economico",
+    "type": "o"
+  },
+  {
+    "adjective": "politico",
+    "type": "o"
+  },
+  {
+    "adjective": "historico",
+    "type": "o"
+  },
+  {
+    "adjective": "cultural",
+    "type": "o"
+  },
+  {
+    "adjective": "artistico",
+    "type": "o"
+  },
+  {
+    "adjective": "musical",
+    "type": "o"
+  },
+  {
+    "adjective": "poetico",
+    "type": "o"
+  },
+  {
+    "adjective": "cientifico",
+    "type": "o"
+  },
+  {
+    "adjective": "tecnico",
+    "type": "o"
+  },
+  {
+    "adjective": "practico",
+    "type": "o"
+  },
+  {
+    "adjective": "teorico",
+    "type": "o"
+  },
+  {
+    "adjective": "critico",
+    "type": "o"
+  },
+  {
+    "adjective": "logico",
+    "type": "o"
+  },
+  {
+    "adjective": "matematico",
+    "type": "o"
+  },
+  {
+    "adjective": "natural",
+    "type": "o"
+  },
+  {
+    "adjective": "artificial",
+    "type": "o"
+  },
+  {
+    "adjective": "humano",
+    "type": "o"
+  },
+  {
+    "adjective": "divino",
+    "type": "o"
+  },
+  {
+    "adjective": "sagrado",
+    "type": "o"
+  },
+  {
+    "adjective": "profano",
+    "type": "o"
+  },
+  {
+    "adjective": "militar",
+    "type": "o"
+  },
+  {
+    "adjective": "civil",
+    "type": "o"
+  },
+  {
+    "adjective": "religioso",
+    "type": "o"
+  },
+  {
+    "adjective": "magico",
+    "type": "o"
+  },
+  {
+    "adjective": "fantastico",
+    "type": "o"
+  },
+  {
+    "adjective": "real",
+    "type": "o"
+  },
+  {
+    "adjective": "irreal",
+    "type": "o"
+  },
+  {
+    "adjective": "positivo",
+    "type": "o"
+  },
+  {
+    "adjective": "negativo",
+    "type": "o"
+  },
+  {
+    "adjective": "activo",
+    "type": "o"
+  },
+  {
+    "adjective": "pasivo",
+    "type": "o"
+  },
+  {
+    "adjective": "directo",
+    "type": "o"
+  },
+  {
+    "adjective": "indirecto",
+    "type": "o"
+  },
+  {
+    "adjective": "concreto",
+    "type": "o"
+  },
+  {
+    "adjective": "abstracto",
+    "type": "o"
+  },
+  {
+    "adjective": "cierto",
+    "type": "o"
+  },
+  {
+    "adjective": "incierto",
+    "type": "o"
+  },
+  {
+    "adjective": "necesario",
+    "type": "o"
+  },
+  {
+    "adjective": "santo",
+    "type": "o"
+  },
+  {
+    "adjective": "maldito",
+    "type": "o"
+  },
+  {
+    "adjective": "heroico",
+    "type": "o"
+  },
+  {
+    "adjective": "tragico",
+    "type": "o"
+  },
+  {
+    "adjective": "comico",
+    "type": "o"
+  },
+  {
+    "adjective": "dramatico",
+    "type": "o"
+  },
+  {
+    "adjective": "epico",
+    "type": "o"
+  },
+  {
+    "adjective": "lirico",
+    "type": "o"
+  },
+  {
+    "adjective": "romantico",
+    "type": "o"
+  },
+  {
+    "adjective": "clasico",
+    "type": "o"
+  },
+  {
+    "adjective": "modernista",
+    "type": "o"
+  },
+  {
+    "adjective": "barroco",
+    "type": "o"
+  },
+  {
+    "adjective": "plastico",
+    "type": "o"
+  },
+  {
+    "adjective": "elasticos",
+    "type": "o"
+  },
+  {
+    "adjective": "dinamico",
+    "type": "o"
+  },
+  {
+    "adjective": "estatico",
+    "type": "o"
+  },
+  {
+    "adjective": "intenso",
+    "type": "o"
+  },
+  {
+    "adjective": "debil",
+    "type": "o"
+  },
+  {
+    "adjective": "fino",
+    "type": "o"
+  },
+  {
+    "adjective": "grueso",
+    "type": "o"
+  },
+  {
+    "adjective": "grande",
+    "type": "e"
+  },
+  {
+    "adjective": "fuerte",
+    "type": "e"
+  },
+  {
+    "adjective": "importante",
+    "type": "e"
+  },
+  {
+    "adjective": "inteligente",
+    "type": "e"
+  },
+  {
+    "adjective": "valiente",
+    "type": "e"
+  },
+  {
+    "adjective": "amable",
+    "type": "e"
+  },
+  {
+    "adjective": "alegre",
+    "type": "e"
+  },
+  {
+    "adjective": "triste",
+    "type": "e"
+  },
+  {
+    "adjective": "noble",
+    "type": "e"
+  },
+  {
+    "adjective": "humilde",
+    "type": "e"
+  },
+  {
+    "adjective": "doble",
+    "type": "e"
+  },
+  {
+    "adjective": "triple",
+    "type": "e"
+  },
+  {
+    "adjective": "multiple",
+    "type": "e"
+  },
+  {
+    "adjective": "simple",
+    "type": "e"
+  },
+  {
+    "adjective": "grave",
+    "type": "e"
+  },
+  {
+    "adjective": "agradable",
+    "type": "e"
+  },
+  {
+    "adjective": "desagradable",
+    "type": "e"
+  },
+  {
+    "adjective": "notable",
+    "type": "e"
+  },
+  {
+    "adjective": "capaz",
+    "type": "e"
+  },
+  {
+    "adjective": "optimista",
+    "type": "e"
+  },
+  {
+    "adjective": "pesimista",
+    "type": "e"
+  },
+  {
+    "adjective": "realista",
+    "type": "e"
+  },
+  {
+    "adjective": "idealista",
+    "type": "e"
+  },
+  {
+    "adjective": "egoista",
+    "type": "e"
+  },
+  {
+    "adjective": "altruista",
+    "type": "e"
+  },
+  {
+    "adjective": "materialista",
+    "type": "e"
+  },
+  {
+    "adjective": "espiritualista",
+    "type": "e"
+  },
+  {
+    "adjective": "trabajador",
+    "type": "or"
+  },
+  {
+    "adjective": "encantador",
+    "type": "or"
+  },
+  {
+    "adjective": "hablador",
+    "type": "or"
+  },
+  {
+    "adjective": "luchador",
+    "type": "or"
+  },
+  {
+    "adjective": "pensador",
+    "type": "or"
+  },
+  {
+    "adjective": "soñador",
+    "type": "or"
+  },
+  {
+    "adjective": "jugador",
+    "type": "or"
+  },
+  {
+    "adjective": "cantador",
+    "type": "or"
+  },
+  {
+    "adjective": "bailador",
+    "type": "or"
+  },
+  {
+    "adjective": "nadador",
+    "type": "or"
+  },
+  {
+    "adjective": "corredor",
+    "type": "or"
+  },
+  {
+    "adjective": "caminador",
+    "type": "or"
+  },
+  {
+    "adjective": "holgazan",
+    "type": "an"
+  },
+  {
+    "adjective": "talaman",
+    "type": "an"
+  },
+  {
+    "adjective": "dormilan",
+    "type": "an"
+  },
+  {
+    "adjective": "comilan",
+    "type": "an"
+  },
+  {
+    "adjective": "bellaco",
+    "type": "an"
+  },
+  {
+    "adjective": "pequeñin",
+    "type": "in"
+  },
+  {
+    "adjective": "chiquitin",
+    "type": "in"
+  },
+  {
+    "adjective": "pobretin",
+    "type": "in"
+  },
+  {
+    "adjective": "tontin",
+    "type": "in"
+  },
+  {
+    "adjective": "frances",
+    "type": "es"
+  },
+  {
+    "adjective": "ingles",
+    "type": "es"
+  },
+  {
+    "adjective": "escoces",
+    "type": "es"
+  },
+  {
+    "adjective": "portugues",
+    "type": "es"
+  },
+  {
+    "adjective": "holandes",
+    "type": "es"
+  },
+  {
+    "adjective": "dinamarques",
+    "type": "es"
+  },
+  {
+    "adjective": "japones",
+    "type": "es"
+  },
+  {
+    "adjective": "chino",
+    "type": "es"
+  },
+  {
+    "adjective": "aleman",
+    "type": "es"
+  },
+  {
+    "adjective": "burlon",
+    "type": "on"
+  },
+  {
+    "adjective": "jugueton",
+    "type": "on"
+  },
+  {
+    "adjective": "lloron",
+    "type": "on"
+  },
+  {
+    "adjective": "pregunton",
+    "type": "on"
+  },
+  {
+    "adjective": "comilon",
+    "type": "on"
+  },
+  {
+    "adjective": "dormilon",
+    "type": "on"
+  },
+  {
+    "adjective": "hablador",
+    "type": "on"
+  },
+  {
+    "adjective": "peleon",
+    "type": "on"
+  },
+  {
+    "adjective": "feliz",
+    "type": "z"
+  },
+  {
+    "adjective": "capaz",
+    "type": "z"
+  },
+  {
+    "adjective": "audaz",
+    "type": "z"
+  },
+  {
+    "adjective": "tenaz",
+    "type": "z"
+  },
+  {
+    "adjective": "voraz",
+    "type": "z"
+  },
+  {
+    "adjective": "eficaz",
+    "type": "z"
+  },
+  {
+    "adjective": "perspicaz",
+    "type": "z"
+  },
+  {
+    "adjective": "sagaz",
+    "type": "z"
+  },
+  {
+    "adjective": "feroz",
+    "type": "z"
+  },
+  {
+    "adjective": "atroz",
+    "type": "z"
+  },
+  {
+    "adjective": "veloz",
+    "type": "z"
+  },
+  {
+    "adjective": "fugaz",
+    "type": "z"
+  },
+  {
+    "adjective": "mordaz",
+    "type": "z"
+  },
+  {
+    "adjective": "locuaz",
+    "type": "z"
+  },
+  {
+    "adjective": "mendaz",
+    "type": "z"
+  },
+  {
+    "adjective": "vivaz",
+    "type": "z"
+  },
+  {
+    "adjective": "comun",
+    "type": "consonant"
+  },
+  {
+    "adjective": "facil",
+    "type": "consonant"
+  },
+  {
+    "adjective": "dificil",
+    "type": "consonant"
+  },
+  {
+    "adjective": "debil",
+    "type": "consonant"
+  },
+  {
+    "adjective": "fuerte",
+    "type": "consonant"
+  },
+  {
+    "adjective": "particular",
+    "type": "consonant"
+  },
+  {
+    "adjective": "especial",
+    "type": "consonant"
+  },
+  {
+    "adjective": "general",
+    "type": "consonant"
+  },
+  {
+    "adjective": "regular",
+    "type": "consonant"
+  },
+  {
+    "adjective": "popular",
+    "type": "consonant"
+  },
+  {
+    "adjective": "similar",
+    "type": "consonant"
+  },
+  {
+    "adjective": "anterior",
+    "type": "consonant"
+  },
+  {
+    "adjective": "posterior",
+    "type": "consonant"
+  },
+  {
+    "adjective": "interior",
+    "type": "consonant"
+  },
+  {
+    "adjective": "exterior",
+    "type": "consonant"
+  },
+  {
+    "adjective": "superior",
+    "type": "consonant"
+  },
+  {
+    "adjective": "inferior",
+    "type": "consonant"
+  },
+  {
+    "adjective": "mayor",
+    "type": "consonant"
+  },
+  {
+    "adjective": "menor",
+    "type": "consonant"
+  },
+  {
+    "adjective": "mejor",
+    "type": "consonant"
+  },
+  {
+    "adjective": "peor",
+    "type": "consonant"
+  },
+  {
+    "adjective": "fatal",
+    "type": "consonant"
+  },
+  {
+    "adjective": "cruel",
+    "type": "consonant"
+  },
+  {
+    "adjective": "fiel",
+    "type": "consonant"
+  },
+  {
+    "adjective": "infiel",
+    "type": "consonant"
+  },
+  {
+    "adjective": "leal",
+    "type": "consonant"
+  },
+  {
+    "adjective": "desleal",
+    "type": "consonant"
+  },
+  {
+    "adjective": "cortes",
+    "type": "consonant"
+  },
+  {
+    "adjective": "descortes",
+    "type": "consonant"
+  },
+  {
+    "adjective": "joven",
+    "type": "consonant"
+  },
+  {
+    "adjective": "interesante",
+    "type": "e"
+  },
+  {
+    "adjective": "siguiente",
+    "type": "e"
+  },
+  {
+    "adjective": "existente",
+    "type": "e"
+  },
+  {
+    "adjective": "permanente",
+    "type": "e"
+  },
+  {
+    "adjective": "urgente",
+    "type": "e"
+  },
+  {
+    "adjective": "frecuente",
+    "type": "e"
+  },
+  {
+    "adjective": "inmediato",
+    "type": "e"
+  },
+  {
+    "adjective": "gratis",
+    "type": "invariant"
+  },
+  {
+    "adjective": "isosceles",
+    "type": "invariant"
+  },
+  {
+    "adjective": "rojo",
+    "type": "invariant"
+  },
+  {
+    "adjective": "rosa",
+    "type": "invariant"
+  },
+  {
+    "adjective": "naranja",
+    "type": "invariant"
+  },
+  {
+    "adjective": "violeta",
+    "type": "invariant"
+  },
+  {
+    "adjective": "verde",
+    "type": "invariant"
+  },
+  {
+    "adjective": "azul",
+    "type": "invariant"
+  },
+  {
+    "adjective": "marron",
+    "type": "invariant"
+  },
+  {
+    "adjective": "gris",
+    "type": "invariant"
+  },
+  {
+    "adjective": "blanco",
+    "type": "invariant"
+  },
+  {
+    "adjective": "negro",
+    "type": "invariant"
+  }
+]

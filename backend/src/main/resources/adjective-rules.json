@@ -1,0 +1,53 @@
+{
+  "rules": {
+    "o": {
+      "removeLast": 1,
+      "feminineSuffix": "a",
+      "masculinePluralSuffix": "s",
+      "femininePluralSuffix": "as"
+    },
+    "e": {
+      "pluralSuffix": "s"
+    },
+    "or": {
+      "removeLast": 2,
+      "feminineSuffix": "dora",
+      "masculinePluralSuffix": "es",
+      "femininePluralSuffix": "s"
+    },
+    "an": {
+      "removeLast": 2,
+      "feminineSuffix": "ana",
+      "masculinePluralSuffix": "es",
+      "femininePluralSuffix": "s"
+    },
+    "in": {
+      "removeLast": 2,
+      "feminineSuffix": "ina",
+      "masculinePluralSuffix": "es",
+      "femininePluralSuffix": "s"
+    },
+    "es": {
+      "removeLast": 2,
+      "feminineSuffix": "esa",
+      "masculinePluralSuffix": "es",
+      "femininePluralSuffix": "s"
+    },
+    "on": {
+      "removeLast": 2,
+      "feminineSuffix": "ona",
+      "masculinePluralSuffix": "es",
+      "femininePluralSuffix": "s"
+    },
+    "z": {
+      "removeLast": 1,
+      "pluralSuffix": "ces"
+    },
+    "consonant": {
+      "pluralSuffix": "es"
+    },
+    "invariant": {
+      "pluralSuffix": ""
+    }
+  }
+}

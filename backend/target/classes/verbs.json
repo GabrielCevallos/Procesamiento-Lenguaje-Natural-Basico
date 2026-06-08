@@ -1,0 +1,1974 @@
+{
+  "regular": [
+    {
+      "infinitive": "hablar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "cantar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "bailar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "trabajar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "estudiar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "comprar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "llevar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "mirar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "llamar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "entrar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "esperar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "dejar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "explicar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "pasar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "necesitar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "desear",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "terminar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "cambiar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "cuidar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "cocinar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "limpiar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "lavar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "preparar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "guardar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "olvidar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "visitar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "invitar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "aceptar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "ayudar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "crear",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "dibujar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "saltar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "nadar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "caminar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "viajar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "descansar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "llorar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "gritar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "escuchar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "ensenar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "preguntar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "contestar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "tomar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "usar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "andar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "levantar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "ganar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "gastar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "lanzar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "mandar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "participar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "pintar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "planear",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "practicar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "prestar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "realizar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "revisar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "robar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "saludar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "tratar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "votar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "cenar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "desayunar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "almorzar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "merendar",
+      "conjugation": "ar_regular"
+    },
+    {
+      "infinitive": "correr",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "comer",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "beber",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "leer",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "creer",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "romper",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "vender",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "deber",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "aprender",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "comprender",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "responder",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "esconder",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "barrer",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "coser",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "tejer",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "depender",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "emprender",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "prometer",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "someter",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "toser",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "prender",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "mecer",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "poseer",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "proveer",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "recreer",
+      "conjugation": "er_regular"
+    },
+    {
+      "infinitive": "vivir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "escribir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "abrir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "subir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "recibir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "decidir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "discutir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "dividir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "existir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "partir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "permitir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "cumplir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "describir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "descubrir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "imprimir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "anadir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "asistir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "confundir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "consumir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "insistir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "ocurrir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "omitir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "presumir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "prohibir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "resistir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "unir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "sobrevivir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "transmitir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "undir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "urgir",
+      "conjugation": "ir_regular"
+    },
+    {
+      "infinitive": "pensar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "comenzar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "empezar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "cerrar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "despertar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "sentar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "gobernar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "negar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "regar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "sembrar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "atravesar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "calentar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "confesar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "enterrar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "helar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "nevar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "quebrar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "temblar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "tropezar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "recomendar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "encomendar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "fregar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "merendar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "manifestar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "apretar",
+      "conjugation": "ar_stem_eie"
+    },
+    {
+      "infinitive": "contar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "encontrar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "mostrar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "recordar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "volar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "almorzar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "colgar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "costar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "demostrar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "soltar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "sonar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "tostar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "aprobar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "comprobar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "consolar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "poblar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "probar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "rodar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "soldar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "tronar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "acordar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "acostar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "avergonzar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "degollar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "desollar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "renovar",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "resolver",
+      "conjugation": "ar_stem_oue"
+    },
+    {
+      "infinitive": "jugar",
+      "conjugation": "ar_stem_uue"
+    },
+    {
+      "infinitive": "querer",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "perder",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "ascender",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "defender",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "descender",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "encender",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "entender",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "extender",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "tender",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "verter",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "heder",
+      "conjugation": "er_stem_eie"
+    },
+    {
+      "infinitive": "poder",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "volver",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "doler",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "llover",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "morder",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "mover",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "resolver",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "soler",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "absolver",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "cocer",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "moler",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "torcer",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "devolver",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "disolver",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "envolver",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "revolver",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "promover",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "remover",
+      "conjugation": "er_stem_oue"
+    },
+    {
+      "infinitive": "pedir",
+      "conjugation": "er_stem_i"
+    },
+    {
+      "infinitive": "sentir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "preferir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "mentir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "hervir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "advertir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "convertir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "divertir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "herir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "sugerir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "digerir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "invertir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "pervertir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "referir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "transferir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "zaherir",
+      "conjugation": "ir_stem_eie"
+    },
+    {
+      "infinitive": "pedir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "repetir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "servir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "medir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "reir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "freir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "competir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "concebir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "conseguir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "consentir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "despedir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "elegir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "impedir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "rendir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "renir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "seguir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "sonreir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "vestir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "gemir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "ceñir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "corregir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "derretir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "expedir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "investir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "perseguir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "proseguir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "reelegir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "refreir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "teñir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "cegir",
+      "conjugation": "ir_stem_ei"
+    },
+    {
+      "infinitive": "dormir",
+      "conjugation": "ir_stem_oue"
+    },
+    {
+      "infinitive": "morir",
+      "conjugation": "ir_stem_oue"
+    },
+    {
+      "infinitive": "pudrir",
+      "conjugation": "ir_stem_oue"
+    }
+  ],
+  "irregular": [
+    "ser",
+    "soy",
+    "eres",
+    "es",
+    "somos",
+    "sois",
+    "son",
+    "era",
+    "eras",
+    "era",
+    "eramos",
+    "erais",
+    "eran",
+    "fui",
+    "fuiste",
+    "fue",
+    "fuimos",
+    "fuisteis",
+    "fueron",
+    "sere",
+    "seras",
+    "sera",
+    "seremos",
+    "sereis",
+    "seran",
+    "seria",
+    "serias",
+    "seria",
+    "seriamos",
+    "seriais",
+    "serian",
+    "sea",
+    "seas",
+    "sea",
+    "seamos",
+    "seais",
+    "sean",
+    "se",
+    "sea",
+    "seamos",
+    "sed",
+    "sean",
+    "siendo",
+    "sido",
+    "ir",
+    "voy",
+    "vas",
+    "va",
+    "vamos",
+    "vais",
+    "van",
+    "iba",
+    "ibas",
+    "iba",
+    "ibamos",
+    "ibais",
+    "iban",
+    "ire",
+    "iras",
+    "ira",
+    "iremos",
+    "ireis",
+    "iran",
+    "iria",
+    "irias",
+    "iria",
+    "iriamos",
+    "iriais",
+    "irian",
+    "vaya",
+    "vayas",
+    "vaya",
+    "vayamos",
+    "vayais",
+    "vayan",
+    "ve",
+    "vaya",
+    "vayamos",
+    "id",
+    "vayan",
+    "yendo",
+    "ido",
+    "haber",
+    "he",
+    "has",
+    "ha",
+    "hemos",
+    "habeis",
+    "han",
+    "habia",
+    "habias",
+    "habia",
+    "habiamos",
+    "habiais",
+    "habian",
+    "hube",
+    "hubiste",
+    "hubo",
+    "hubimos",
+    "hubisteis",
+    "hubieron",
+    "habre",
+    "habras",
+    "habra",
+    "habremos",
+    "habreis",
+    "habran",
+    "habria",
+    "habrias",
+    "habria",
+    "habriamos",
+    "habriais",
+    "habrian",
+    "haya",
+    "hayas",
+    "haya",
+    "hayamos",
+    "hayais",
+    "hayan",
+    "habe",
+    "haya",
+    "hayamos",
+    "habed",
+    "hayan",
+    "habiendo",
+    "habido",
+    "estar",
+    "estoy",
+    "estas",
+    "esta",
+    "estamos",
+    "estais",
+    "estan",
+    "estaba",
+    "estabas",
+    "estaba",
+    "estabamos",
+    "estabais",
+    "estaban",
+    "estuve",
+    "estuviste",
+    "estuvo",
+    "estuvimos",
+    "estuvisteis",
+    "estuvieron",
+    "estare",
+    "estaras",
+    "estara",
+    "estaremos",
+    "estareis",
+    "estaran",
+    "estaria",
+    "estarias",
+    "estaria",
+    "estariamos",
+    "estariais",
+    "estarian",
+    "este",
+    "estes",
+    "este",
+    "estemos",
+    "esteis",
+    "esten",
+    "esta",
+    "este",
+    "estemos",
+    "estad",
+    "esten",
+    "estando",
+    "estado",
+    "dar",
+    "doy",
+    "das",
+    "da",
+    "damos",
+    "dais",
+    "dan",
+    "daba",
+    "dabas",
+    "daba",
+    "dabamos",
+    "dabais",
+    "daban",
+    "di",
+    "diste",
+    "dio",
+    "dimos",
+    "disteis",
+    "dieron",
+    "dare",
+    "daras",
+    "dara",
+    "daremos",
+    "dareis",
+    "daran",
+    "daria",
+    "darias",
+    "daria",
+    "dariamos",
+    "dariais",
+    "darian",
+    "de",
+    "des",
+    "de",
+    "demos",
+    "deis",
+    "den",
+    "da",
+    "de",
+    "demos",
+    "dad",
+    "den",
+    "dando",
+    "dado",
+    "saber",
+    "se",
+    "sabes",
+    "sabe",
+    "sabemos",
+    "sabeis",
+    "saben",
+    "sabia",
+    "sabias",
+    "sabia",
+    "sabiamos",
+    "sabiais",
+    "sabian",
+    "supe",
+    "supiste",
+    "supo",
+    "supimos",
+    "supisteis",
+    "supieron",
+    "sabre",
+    "sabras",
+    "sabra",
+    "sabremos",
+    "sabreis",
+    "sabran",
+    "sabria",
+    "sabrias",
+    "sabria",
+    "sabriamos",
+    "sabriais",
+    "sabrian",
+    "sepa",
+    "sepas",
+    "sepa",
+    "sepamos",
+    "sepais",
+    "sepan",
+    "sabe",
+    "sepa",
+    "sepamos",
+    "sabed",
+    "sepan",
+    "sabiendo",
+    "sabido",
+    "caber",
+    "quepo",
+    "cabes",
+    "cabe",
+    "cabemos",
+    "cabeis",
+    "caben",
+    "cabia",
+    "cabias",
+    "cabia",
+    "cabiamos",
+    "cabiais",
+    "cabian",
+    "cupe",
+    "cupiste",
+    "cupo",
+    "cupimos",
+    "cupisteis",
+    "cupieron",
+    "cabre",
+    "cabras",
+    "cabera",
+    "cabremos",
+    "cabreis",
+    "caberan",
+    "cabria",
+    "cabrias",
+    "cabria",
+    "cabriamos",
+    "cabriais",
+    "cabrian",
+    "quepa",
+    "quepas",
+    "quepa",
+    "quepamos",
+    "quepais",
+    "quepan",
+    "cabe",
+    "quepa",
+    "quepamos",
+    "cabed",
+    "quepan",
+    "cabiendo",
+    "cabido",
+    "ver",
+    "veo",
+    "ves",
+    "ve",
+    "vemos",
+    "veis",
+    "ven",
+    "veia",
+    "veias",
+    "veia",
+    "veiamos",
+    "veiais",
+    "veian",
+    "vi",
+    "viste",
+    "vio",
+    "vimos",
+    "visteis",
+    "vieron",
+    "vere",
+    "veras",
+    "vera",
+    "veremos",
+    "vereis",
+    "veran",
+    "veria",
+    "verias",
+    "veria",
+    "veriamos",
+    "veriais",
+    "verian",
+    "vea",
+    "veas",
+    "vea",
+    "veamos",
+    "veais",
+    "vean",
+    "ve",
+    "vea",
+    "veamos",
+    "ved",
+    "vean",
+    "viendo",
+    "visto"
+  ],
+  "special": [
+    "hacer",
+    "hago",
+    "haces",
+    "hace",
+    "hacemos",
+    "haceis",
+    "hacen",
+    "hacia",
+    "hacias",
+    "hacia",
+    "haciamos",
+    "haciais",
+    "hacian",
+    "hice",
+    "hiciste",
+    "hizo",
+    "hicimos",
+    "hicisteis",
+    "hicieron",
+    "hare",
+    "haras",
+    "hara",
+    "haremos",
+    "hareis",
+    "haran",
+    "haria",
+    "harias",
+    "haria",
+    "hariamos",
+    "hariais",
+    "harian",
+    "haga",
+    "hagas",
+    "haga",
+    "hagamos",
+    "hagais",
+    "hagan",
+    "haz",
+    "haga",
+    "hagamos",
+    "haced",
+    "hagan",
+    "haciendo",
+    "hecho",
+    "poner",
+    "pongo",
+    "pones",
+    "pone",
+    "ponemos",
+    "poneis",
+    "ponen",
+    "ponia",
+    "ponias",
+    "ponia",
+    "poniamos",
+    "poniais",
+    "ponian",
+    "puse",
+    "pusiste",
+    "puso",
+    "pusimos",
+    "pusisteis",
+    "pusieron",
+    "pondre",
+    "pondras",
+    "pondra",
+    "pondremos",
+    "pondreis",
+    "pondran",
+    "pondria",
+    "pondrias",
+    "pondria",
+    "pondriamos",
+    "pondriais",
+    "pondrian",
+    "ponga",
+    "pongas",
+    "ponga",
+    "pongamos",
+    "pongais",
+    "pongan",
+    "pon",
+    "ponga",
+    "pongamos",
+    "poned",
+    "pongan",
+    "poniendo",
+    "puesto",
+    "tener",
+    "tengo",
+    "tienes",
+    "tiene",
+    "tenemos",
+    "teneis",
+    "tienen",
+    "tenia",
+    "tenias",
+    "tenia",
+    "teniamos",
+    "teniais",
+    "tenian",
+    "tuve",
+    "tuviste",
+    "tuvo",
+    "tuvimos",
+    "tuvisteis",
+    "tuvieron",
+    "tendre",
+    "tendras",
+    "tendra",
+    "tendremos",
+    "tendreis",
+    "tendran",
+    "tendria",
+    "tendrias",
+    "tendria",
+    "tendriamos",
+    "tendriais",
+    "tendrian",
+    "tenga",
+    "tengas",
+    "tenga",
+    "tengamos",
+    "tengais",
+    "tengan",
+    "ten",
+    "tenga",
+    "tengamos",
+    "tened",
+    "tengan",
+    "teniendo",
+    "tenido",
+    "venir",
+    "vengo",
+    "vienes",
+    "viene",
+    "venimos",
+    "venis",
+    "vienen",
+    "venia",
+    "venias",
+    "venia",
+    "veniamos",
+    "veniais",
+    "venian",
+    "vine",
+    "viniste",
+    "vino",
+    "vinimos",
+    "vinisteis",
+    "vinieron",
+    "vendre",
+    "vendras",
+    "vendra",
+    "vendremos",
+    "vendreis",
+    "vendran",
+    "vendria",
+    "vendrias",
+    "vendria",
+    "vendriamos",
+    "vendriais",
+    "vendrian",
+    "venga",
+    "vengas",
+    "venga",
+    "vengamos",
+    "vengais",
+    "vengan",
+    "ven",
+    "venga",
+    "vengamos",
+    "venid",
+    "vengan",
+    "viniendo",
+    "venido",
+    "salir",
+    "salgo",
+    "sales",
+    "sale",
+    "salimos",
+    "salis",
+    "salen",
+    "salia",
+    "salias",
+    "salia",
+    "salianos",
+    "saliais",
+    "salian",
+    "sali",
+    "saliste",
+    "salio",
+    "salimos",
+    "salisteis",
+    "salieron",
+    "saldre",
+    "saldras",
+    "saldra",
+    "saldremos",
+    "saldreis",
+    "saldran",
+    "saldria",
+    "saldrias",
+    "saldria",
+    "saldriamos",
+    "saldriais",
+    "saldrian",
+    "salga",
+    "salgas",
+    "salga",
+    "salgamos",
+    "salgais",
+    "salgan",
+    "sal",
+    "salga",
+    "salgamos",
+    "salid",
+    "salgan",
+    "saliendo",
+    "salido",
+    "valer",
+    "valgo",
+    "vales",
+    "vale",
+    "valemos",
+    "valeis",
+    "valen",
+    "valia",
+    "valias",
+    "valia",
+    "valiamos",
+    "valiais",
+    "valian",
+    "vali",
+    "valiste",
+    "valio",
+    "valimos",
+    "valisteis",
+    "valieron",
+    "valdre",
+    "valdras",
+    "valdra",
+    "valdremos",
+    "valdreis",
+    "valdran",
+    "valdria",
+    "valdrias",
+    "valdria",
+    "valdriamos",
+    "valdriais",
+    "valdrian",
+    "valga",
+    "valgas",
+    "valga",
+    "valgamos",
+    "valgais",
+    "valgan",
+    "vale",
+    "valga",
+    "valgamos",
+    "valed",
+    "valgan",
+    "valiendo",
+    "valido",
+    "caer",
+    "caigo",
+    "caes",
+    "cae",
+    "caemos",
+    "caeis",
+    "caen",
+    "caia",
+    "caias",
+    "caia",
+    "caianos",
+    "caiais",
+    "caian",
+    "cai",
+    "caiste",
+    "cayo",
+    "caimos",
+    "caisteis",
+    "cayeron",
+    "caere",
+    "caeras",
+    "caera",
+    "caeremos",
+    "caereis",
+    "caeran",
+    "caeria",
+    "caerias",
+    "caeria",
+    "caeriamos",
+    "caeriais",
+    "caerian",
+    "caiga",
+    "caigas",
+    "caiga",
+    "caigamos",
+    "caigais",
+    "caigan",
+    "cae",
+    "caiga",
+    "caigamos",
+    "caed",
+    "caigan",
+    "cayendo",
+    "caido",
+    "traer",
+    "traigo",
+    "traes",
+    "trae",
+    "traemos",
+    "traeis",
+    "traen",
+    "traia",
+    "traias",
+    "traia",
+    "traianos",
+    "traiais",
+    "traian",
+    "traje",
+    "trajiste",
+    "trajo",
+    "trajimos",
+    "trajisteis",
+    "trajeron",
+    "traere",
+    "traeras",
+    "traera",
+    "traeremos",
+    "traereis",
+    "traeran",
+    "traeria",
+    "traerias",
+    "traeria",
+    "traeriamos",
+    "traeriais",
+    "traerian",
+    "traiga",
+    "traigas",
+    "traiga",
+    "traigamos",
+    "traigais",
+    "traigan",
+    "trae",
+    "traiga",
+    "traigamos",
+    "traed",
+    "traigan",
+    "trayendo",
+    "traido",
+    "decir",
+    "digo",
+    "dices",
+    "dice",
+    "decimos",
+    "decis",
+    "dicen",
+    "decia",
+    "decias",
+    "decia",
+    "deciamos",
+    "deciais",
+    "decian",
+    "dije",
+    "dijiste",
+    "dijo",
+    "dijimos",
+    "dijisteis",
+    "dijeron",
+    "dire",
+    "diras",
+    "dira",
+    "diremos",
+    "direis",
+    "diran",
+    "diria",
+    "dirias",
+    "diria",
+    "diriamos",
+    "diriais",
+    "dirian",
+    "diga",
+    "digas",
+    "diga",
+    "digamos",
+    "digais",
+    "digan",
+    "di",
+    "diga",
+    "digamos",
+    "decid",
+    "digan",
+    "diciendo",
+    "dicho",
+    "conozco",
+    "conozcas",
+    "conozca",
+    "conozcamos",
+    "conozcais",
+    "conozcan",
+    "crezco",
+    "crezcas",
+    "crezca",
+    "crezcamos",
+    "crezcais",
+    "crezcan",
+    "agradezco",
+    "agradezcas",
+    "agradezca",
+    "agradezcamos",
+    "agradezcais",
+    "agradezcan",
+    "nazco",
+    "nazcas",
+    "nazca",
+    "nazcamos",
+    "nazcais",
+    "nazcan",
+    "ofrezco",
+    "ofrezcas",
+    "ofrezca",
+    "ofrezcamos",
+    "ofrezcais",
+    "ofrezcan",
+    "parezco",
+    "parezcas",
+    "parezca",
+    "parezcamos",
+    "parezcais",
+    "parezcan",
+    "pertenezco",
+    "pertenezcas",
+    "pertenezca",
+    "pertenezcamos",
+    "pertenezcais",
+    "pertenezcan",
+    "traduzco",
+    "traduzcas",
+    "traduzca",
+    "traduzcamos",
+    "traduzcais",
+    "traduzcan",
+    "produzco",
+    "produzcas",
+    "produzca",
+    "produzcamos",
+    "produzcais",
+    "produzcan",
+    "reduzco",
+    "reduzcas",
+    "reduzca",
+    "reduzcamos",
+    "reduzcais",
+    "reduzcan",
+    "conduzco",
+    "conduzcas",
+    "conduzca",
+    "conduzcamos",
+    "conduzcais",
+    "conduzcan",
+    "sigo",
+    "sigues",
+    "sigue",
+    "seguimos",
+    "seguis",
+    "siguen",
+    "consigo",
+    "consigues",
+    "consigue",
+    "conseguimos",
+    "conseguis",
+    "consiguen",
+    "persigo",
+    "persigues",
+    "persigue",
+    "perseguimos",
+    "perseguis",
+    "persiguen",
+    "corrijo",
+    "corrijes",
+    "corrije",
+    "corregimos",
+    "corregis",
+    "corrijen",
+    "elijo",
+    "eliges",
+    "elige",
+    "elegimos",
+    "elegis",
+    "eligen",
+    "dirijo",
+    "diriges",
+    "dirige",
+    "dirigimos",
+    "dirigis",
+    "dirigen",
+    "exijo",
+    "exiges",
+    "exige",
+    "exigimos",
+    "exigis",
+    "exigen",
+    "fingo",
+    "finges",
+    "finge",
+    "fingimos",
+    "fingis",
+    "fingen",
+    "surjo",
+    "surjes",
+    "surje",
+    "surgimos",
+    "surgis",
+    "surjen",
+    "distingo",
+    "distingues",
+    "distingue",
+    "distinguimos",
+    "distinguis",
+    "distinguen",
+    "extingo",
+    "extingues",
+    "extingue",
+    "extinguimos",
+    "extinguis",
+    "extinguen",
+    "oler",
+    "huelo",
+    "hueles",
+    "huele",
+    "olemos",
+    "oleis",
+    "huelen",
+    "olia",
+    "olias",
+    "olia",
+    "oliamos",
+    "oliais",
+    "olian",
+    "oli",
+    "oliste",
+    "olio",
+    "olimos",
+    "olisteis",
+    "olieron",
+    "olere",
+    "oleras",
+    "olera",
+    "oleremos",
+    "olereis",
+    "oleran",
+    "oleria",
+    "olerias",
+    "oleria",
+    "oleriamos",
+    "oleriais",
+    "olerian",
+    "huela",
+    "huelas",
+    "huela",
+    "holamos",
+    "holais",
+    "huelan",
+    "huele",
+    "huela",
+    "holamos",
+    "oled",
+    "huelan",
+    "oliendo",
+    "olido",
+    "soler",
+    "suelo",
+    "sueles",
+    "suele",
+    "solemos",
+    "soleis",
+    "suelen",
+    "solia",
+    "solias",
+    "solia",
+    "soliamos",
+    "soliais",
+    "solian",
+    "soli",
+    "soliste",
+    "solo",
+    "solimos",
+    "solisteis",
+    "solieron",
+    "solere",
+    "soleras",
+    "solera",
+    "soleremos",
+    "solereis",
+    "soleran",
+    "soleria",
+    "solerias",
+    "soleria",
+    "soleriamos",
+    "soleriais",
+    "solerian",
+    "suela",
+    "suelas",
+    "suela",
+    "solamos",
+    "solais",
+    "suelan",
+    "suele",
+    "suela",
+    "solamos",
+    "solved",
+    "suelan",
+    "soliendo",
+    "solido"
+  ]
+}

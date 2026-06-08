@@ -1,0 +1,38 @@
+{
+  "endings": {
+    "present": {
+      "ar": ["o", "as", "a", "amos", "ais", "an"],
+      "er": ["o", "es", "e", "emos", "eis", "en"],
+      "ir": ["o", "es", "e", "imos", "is", "en"]
+    },
+    "preterite": {
+      "ar": ["e", "aste", "o", "amos", "asteis", "aron"],
+      "er": ["i", "iste", "io", "imos", "isteis", "ieron"],
+      "ir": ["i", "iste", "io", "imos", "isteis", "ieron"]
+    },
+    "imperfect": {
+      "ar": ["aba", "abas", "aba", "abamos", "abais", "aban"],
+      "er": ["ia", "ias", "ia", "iamos", "iais", "ian"],
+      "ir": ["ia", "ias", "ia", "iamos", "iais", "ian"]
+    },
+    "subjunctive": {
+      "ar": ["e", "es", "e", "emos", "eis", "en"],
+      "er": ["a", "as", "a", "amos", "ais", "an"],
+      "ir": ["a", "as", "a", "amos", "ais", "an"]
+    },
+    "imperative": {
+      "ar": ["a", "e", "emos", "ad", "en"],
+      "er": ["e", "a", "amos", "ed", "an"],
+      "ir": ["e", "a", "amos", "id", "an"]
+    }
+  },
+  "nonPersonal": {
+    "ar": { "gerund": "ando", "participle": "ado" },
+    "er": { "gerund": "iendo", "participle": "ido" },
+    "ir": { "gerund": "iendo", "participle": "ido" }
+  },
+  "extraEndings": {
+    "future": ["e", "as", "a", "emos", "eis", "an"],
+    "conditional": ["ia", "ias", "ia", "iamos", "iais", "ian"]
+  }
+}

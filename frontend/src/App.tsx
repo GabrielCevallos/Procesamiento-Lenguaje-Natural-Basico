@@ -1,8 +1,3 @@
-/**
- * Componente Principal: App
- * Interfaz de usuario principal para el análisis de oraciones.
- */
-
 import React, { useState } from 'react';
 import parseService from './services/api';
 import TokenTable from './components/TokenTable';
@@ -19,9 +14,9 @@ function App() {
 
   const handleAnalyze = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!sentence.trim()) {
-      setError('Por favor, ingresa una oración');
+      setError('Por favor, ingresa una oracion');
       return;
     }
 
@@ -31,24 +26,22 @@ function App() {
 
     try {
       const result = await parseService.analyzeSentence(sentence);
-      
+
       if (result.success) {
         setAnalysisResult(result);
         setError(null);
       } else {
-        // En caso de error, igualmente mostramos los tokens si están disponibles
         setAnalysisResult(result);
-        setError(result.error || 'Error desconocido durante el análisis');
+        setError(result.error || 'Error desconocido durante el analisis');
       }
     } catch (err: any) {
-      // Si hay error HTTP 400, los datos del error están en la respuesta
       const errorData = err.response?.data;
-      
+
       if (errorData) {
         setAnalysisResult(errorData);
-        setError(errorData.error || 'Error en el análisis');
+        setError(errorData.error || 'Error en el analisis');
       } else {
-        setError(err.message || 'Error de conexión con el servidor');
+        setError(err.message || 'Error de conexion con el servidor');
       }
     } finally {
       setLoading(false);
@@ -64,14 +57,24 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>📝 Validador de Oraciones - Análisis Sintáctico</h1>
-        <p className="subtitle">Gramática: Sujeto + Verbo + Complemento</p>
+        <h1>Analizador Sintactico de Oraciones en Espanol</h1>
+        <p className="subtitle">Gramatica: Sujeto + Verbo + Complemento (GLC/CFG)</p>
       </header>
+
+      <section className="grammar-section">
+        <h3>Gramatica Libre de Contexto</h3>
+        <div className="grammar-rules">
+          <code>{'ORACION \u2192 SUJETO VERBO COMPLEMENTO'}</code>
+          <code>{'SUJETO \u2192 SN | PRONOMBRE'}</code>
+          <code>{'SN \u2192 ARTICULO? SUSTANTIVO ADJETIVO?'}</code>
+          <code>{'COMPLEMENTO \u2192 PREPOSICION SN | SN | ADVERBIO'}</code>
+        </div>
+      </section>
 
       <main className="app-main">
         <form onSubmit={handleAnalyze} className="input-form">
           <div className="input-group">
-            <label htmlFor="sentence">Ingresa una oración:</label>
+            <label htmlFor="sentence">Ingresa una oracion:</label>
             <input
               id="sentence"
               type="text"
@@ -85,17 +88,17 @@ function App() {
 
           <div className="button-group">
             <button type="submit" disabled={loading} className="btn-analyze">
-              {loading ? '⏳ Analizando...' : '🔍 Analizar'}
+              {loading ? 'Analizando...' : 'Analizar'}
             </button>
             <button type="button" onClick={handleClear} disabled={loading} className="btn-clear">
-              🔄 Limpiar
+              Limpiar
             </button>
           </div>
         </form>
 
         {error && (
           <div className="error-message">
-            <span>❌ Error:</span> {error}
+            <span>Error:</span> {error}
           </div>
         )}
 
@@ -103,7 +106,39 @@ function App() {
           <div className="results-container">
             {analysisResult.success && (
               <div className="success-message">
-                ✅ ¡Oración válida!
+                Oracion valida
+              </div>
+            )}
+
+            {!analysisResult.success && (
+              <div className="invalid-message">
+                Oracion invalida
+              </div>
+            )}
+
+            {analysisResult.subject && analysisResult.subject.length > 0 && (
+              <div className="grammatical-parts">
+                <div className="part-box subject-box">
+                  <span className="part-label">Sujeto:</span>
+                  <span className="part-value">{analysisResult.subject.join(' ')}</span>
+                </div>
+                <div className="part-box verb-box">
+                  <span className="part-label">Verbo:</span>
+                  <span className="part-value">{analysisResult.verb?.join(' ')}</span>
+                </div>
+                <div className="part-box complement-box">
+                  <span className="part-label">Complemento:</span>
+                  <span className="part-value">{analysisResult.complement?.join(' ')}</span>
+                </div>
+              </div>
+            )}
+
+            {analysisResult.hasAmbiguity && analysisResult.ambiguities && (
+              <div className="ambiguity-section">
+                <h3>Ambiguedad Sintactica Detectada</h3>
+                {analysisResult.ambiguities.map((amb, idx) => (
+                  <p key={idx} className="ambiguity-item">{amb}</p>
+                ))}
               </div>
             )}
 
@@ -111,13 +146,9 @@ function App() {
               <TokenTable tokens={analysisResult.tokens} />
             )}
 
-            {analysisResult.success && analysisResult.derivationSteps && (
+            {analysisResult.derivationSteps && (
               <>
-                <DerivationSteps 
-                  steps={analysisResult.derivationSteps!}
-                  treeASCII={analysisResult.treeASCII || ''}
-                />
-
+                <DerivationSteps steps={analysisResult.derivationSteps!} />
                 <TreeVisualization treeData={analysisResult.treeJSON!} />
               </>
             )}
@@ -126,7 +157,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>© 2024 - Procesamiento de Lenguaje Natural | Teoría de Autómatas y Computabilidad</p>
+        <p>Procesamiento de Lenguaje Natural | Teoria de Automatas y Computabilidad | GLC/CFG</p>
       </footer>
     </div>
   );

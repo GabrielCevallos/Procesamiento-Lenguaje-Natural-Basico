@@ -10,12 +10,10 @@ public class ASTNode {
     private final String symbol;
     private final boolean isTerminal;
     private final List<ASTNode> children;
-    private final int derivationOrder;
 
-    public ASTNode(String symbol, boolean isTerminal, int derivationOrder) {
+    public ASTNode(String symbol, boolean isTerminal) {
         this.symbol = symbol;
         this.isTerminal = isTerminal;
-        this.derivationOrder = derivationOrder;
         this.children = new ArrayList<>();
     }
 
@@ -33,10 +31,6 @@ public class ASTNode {
 
     public void addChild(ASTNode child) {
         children.add(child);
-    }
-
-    public int getDerivationOrder() {
-        return derivationOrder;
     }
 
     /**
